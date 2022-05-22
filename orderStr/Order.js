@@ -1,7 +1,7 @@
 const { generateOrderStr } = require('./generateRandomStr.js');
 
 class Order {
-  constructor(orderType, supCode, name) {
+  constructor({ orderType, supCode, name }) {
     this.orderNum = generateOrderStr();
     this.orderType = orderType;
     this.supCode = supCode;
